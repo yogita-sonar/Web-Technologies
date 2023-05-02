@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Assignment3</title>
+    </head>
+    <style>
+        h3{
+            color: blue;
+            background-color: rgb(23, 54, 2);
+            font-family: sans-serif;
+            font-size: x-large;
+        }
+        table{
+            background-color: rgb(235, 222, 204);
+        }
+        #one{
+            color: rgb(7, 7, 102);
+            background-color: rgb(202, 188, 214);
+            font-family: fantasy;
+        }
+        #two{
+            color: rgb(82, 4, 4);
+            background-color: rgb(171, 245, 245);
+            font-family: fantasy;
+        }
+        .all{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #i{
+            color: rgb(5, 95, 12);
+        }
+    </style>
+    <body>
+        <form action="">
+        <table border="0" width="950" cellspacing="1" cellpadding="5">
+            <tr id="a" class="all">
+                <td><h3>Internet Usage Survey</h3></td>                
+            </tr>
+            <tr id="b" class="all">
+                <td><p>This survey is being conducted to help indentify the Internet usage pattern of our customers. <br> 
+                Please take a few moments to complete and submit this short form. Thank you for your cooperation.</p></td>
+            </tr>
+            <tr id="c" class="all">
+                <td>What type of Internt connection do you have ? <br> (Select One)</td>
+                <td id="i" class="all"><select size="4">
+                    <option>Dial-up</option>
+                    <option>DSL</option>
+                    <option selected>High Speed Cable</option>
+                    <option>Other</option>
+                </select></td>
+            </tr>
+            <tr id="c" class="all">
+                <td>What type of computer do you use most at home?</td>
+                <td><input type="radio" name="r">Desktop <input type="radio" name="r">Laptop</td>
+            </tr>
+            <tr id="d" class="all">
+                <td>How would you describe yourmain reson for using the Internet?</td>
+                <td><input type="radio" name="r" >To do work-related activaties <br>
+                    <input type="radio" name="r" >To do school-releted activites <br>
+                    <input type="radio" name="r" >For entertaiment purposes <br>
+                    <input type="radio" name="r" >Other activites
+                </td>
+            </tr>
+            <tr>
+                <td> <fieldset id="one">
+                    <legend>Tyeps of sites visted</legend>
+                    <p>What types of web sites do you access most often? <br> 
+                    Check all that aply.</p>
+                    <input type="checkbox">Self Improvement <br>
+                    <input type="checkbox">Entertaiment <br>
+                    <input type="checkbox">News and Sports <br>
+                    <input type="checkbox">Reference <br>
+                    <input type="checkbox">Email
+                </fieldset> </td>
+                <td> <fieldset id="two">
+                    <legend>Tyeps of using Internet</legend>
+                    <p>During an average week, how long do you spend online.</p>
+                    <input type="radio" name="b">0-3 Hours <br>
+                    <input type="radio" name="b">4-6 Hours <br>
+                    <input type="radio" name="b">7-10 Hours <br>
+                    <input type="radio" name="b">11-14 Hours <br>
+                    <input type="radio" name="b">15+ Hours
+                </fieldset> </td>
+            </tr>
+            <tr id="e" class="all">
+                <td>Please comment on your opinions concerning Internet privacy and safety.
+                    <textarea  placeholder="type comment here" name="" id="" cols="50" rows="7"></textarea>
+                </td>
+            </tr>
+            <tr id="f" class="all">
+                <td>First Name: <input type="text" name="" placeholder="Enter First Name"></td>
+                <td>Last Name: <input type="text" name="" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr id="g" class="all">
+                <td>Age: <input type="text" size="3" placeholder="80"></td>
+                <td>Zip Code: <input type="text" size="8" placeholder="8000002" name="" id=""></td>
+            </tr>
+            <tr id="h">
+                <th><input type="submit" value="Click to Submit" name="" id=""> <input type="reset" value="Clear Form" name="" id=""></th>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
