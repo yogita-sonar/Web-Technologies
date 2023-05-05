@@ -1,0 +1,49 @@
+<!-- num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+1.Fetch "1" and "5" from string and perform numerical addition -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>String Addition</title>
+  <script>
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Addition</title>
+  </head>
+  <body>
+    <h1>String Addition</h1>
+
+    <script>
+      const num = "1,2,3,4,5,6,7,8,9";
+
+      // Split the num string into an array of numbers
+      const numArray = num.split(",").map(Number);
+
+      // Get the first and fifth numbers from the array
+      const firstNum = numArray[0];
+      const fifthNum = numArray[4];
+
+      // Add the first and fifth numbers
+      const sum = firstNum + fifthNum;
+
+      // Display the sum on the page
+      const sumParagraph = document.createElement("p");
+      sumParagraph.textContent = `The sum of ${firstNum} and ${fifthNum} is ${sum}.`;
+      document.body.appendChild(sumParagraph);
+    </script>
+  </body>
+</html>

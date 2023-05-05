@@ -1,0 +1,69 @@
+<!-- 1.Write a program to find given number is even or odd.
+2.Write a program to find the greater number out of three numbers.
+3.Write a program to find the print the day of week.
+4.Implement a calculator using if-else ladder
+(Take two number from prompt and also operator from prompt) -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // program to find given number is even or odd
+      let number1 = parseInt(prompt("Enter a number: "));
+      if (number1 % 2 == 0) {
+        document.write(number1 + " is even" + "<br>");
+      } else {
+        document.write(number1 + " is odd" + "<br>");
+      }
+
+      // program to find the greater number out of three numbers
+      let number2 = parseInt(prompt("Enter number 1: "));
+      let number3 = parseInt(prompt("Enter number 2: "));
+      let number4 = parseInt(prompt("Enter number 3: "));
+      let max = number2;
+      if (number3 > max) {
+        max = number3;
+      }
+      if (number4 > max) {
+        max = number4;
+      }
+      document.write("The greatest number is: " + max + "<br>");
+
+      // program to print the day of week
+      let day = parseInt(prompt("Enter a number between 1 to 7: "));
+      if (day === 1) {
+        document.write("Monday" + "<br>");
+      } else if (day === 2) {
+        document.write("Tuesday" + "<br>");
+      } else if (day === 3) {
+        document.write("Wednesday" + "<br>");
+      } else if (day === 4) {
+        document.write("Thursday" + "<br>");
+      } else if (day === 5) {
+        document.write("Friday" + "<br>");
+      } else if (day === 6) {
+        document.write("Saturday" + "<br>");
+      } else if (day === 7) {
+        document.write("Sunday" + "<br>");
+      } else {
+        document.write("Invalid input. Please enter a number between 1 to 7" + "<br>");
+      }
+
+      // program to perform arithmetic operation based on user input
+      let num1 = parseInt(prompt("Enter number 1: "));
+      let num2 = parseInt(prompt("Enter number 2: "));
+      let operator = prompt("Enter operator (+, -, *, /): ");
+      if (operator === "+") {
+        document.write(num1 + num2 + "<br>");
+      } else if (operator === "-") {
+        document.write(num1 - num2 + "<br>");
+      } else if (operator === "*") {
+        document.write(num1 * num2 + "<br>");
+      } else if (operator === "/") {
+        document.write(num1 / num2 + "<br>");
+      } else {
+        document.write("Invalid operator. Please enter a valid operator (+, -, *, /)" + "<br>");
+      }
+    </script>
+  </body>
+</html>

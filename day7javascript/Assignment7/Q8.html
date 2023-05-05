@@ -1,0 +1,29 @@
+<!-- 4.Implement a calculator using if-else ladder
+(Take two number from prompt and also operator from prompt) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>operator</title>
+    <script>
+      let a = parseFloat(prompt("Enter first number: "));
+      let b = parseFloat(prompt("Enter second number: "));
+      let operator = prompt("Enter the operator (+, -, *, /): ");
+      let result;
+      if (operator === "+") {
+        result = a + b;
+      } else if (operator === "-") {
+        result = a - b;
+      } else if (operator === "*") {
+        result = a * b;
+      } else if (operator === "/") {
+        result = a / b;
+      } else {
+        result = "Invalid operator";
+      }
+      document.write("The result of " + a + " " + operator + " " + b + " is " + result);
+    </script>
+    </head>
+<body>
+
+</body>
+</html>

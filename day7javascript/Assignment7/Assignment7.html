@@ -1,0 +1,58 @@
+<!-- 7.Write code to print table (Take Number and range from user)
+If user inputs 2 and range 20 then print table of 2 till 20 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Table</title>
+  <script>
+      var num = parseInt(document.getElementById("num").value);
+        var range = parseInt(document.getElementById("range").value);
+        document.write("<h2> Enter a number: </h2>");
+        document.write("<h2>Enter range: </h2>");
+        var result = "";
+        for (var i = 1; i <= range; i++) {
+          result += num + " x " + i + " = " + (num * i) + "<br>";
+        }
+        document.getElementById("table").innerHTML = result;
+        document.write("<h2>Print Table "  +result+ "</h2>");
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print Table</title>
+    <script type="text/javascript">
+      function printTable() {
+        var num = parseInt(document.getElementById("num").value);
+        var range = parseInt(document.getElementById("range").value);
+        var result = "";
+        for (var i = 1; i <= range; i++) {
+          result += num + " x " + i + " = " + (num * i) + "<br>";
+        }
+        document.getElementById("table").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Print Table</h2>
+    <label>Enter a number:</label>
+    <input type="number" id="num" />
+    <br />
+    <label>Enter range:</label>
+    <input type="number" id="range" />
+    <br />
+    <button onclick="printTable()">Print Table</button>
+    <br />
+    <div id="table"></div>
+  </body>
+</html>

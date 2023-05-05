@@ -1,0 +1,41 @@
+<!-- 6.Write a program to print even number from 1 to 20 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even Numbers from 1 to 20</title>
+
+        <script>
+           document.write("<h1>Even Numbers from 1 to 20 </h1>");
+          for (var i = 2; i <= 20; i += 2) {
+          result += i + " ";
+        }
+        document.write(result);
+        </script>
+      </head>
+   <body>
+        
+   </body>
+ </html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Even Numbers from 1 to 20</title>
+    <script type="text/javascript">
+      function printEvenNumbers() {
+        var result = "";
+        for (var i = 2; i <= 20; i += 2) {
+          result += i + " ";
+        }
+        document.getElementById("even-numbers").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Even Numbers from 1 to 20</h2>
+    <button onclick="printEvenNumbers()">Print Even Numbers</button>
+    <p id="even-numbers"></p>
+  </body>
+</html>

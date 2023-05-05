@@ -1,0 +1,59 @@
+<!-- 1.Write a program to check given string ends with "t" or not -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>String Ends with "t" Checker</title>
+  <script>
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Ends with "t" Checker</title>
+  </head>
+  <body>
+    <h1>String Ends with "t" Checker</h1>
+    <p>Enter a string to check if it ends with "t":</p>
+    <form>
+      <label for="string-input">String:</label>
+      <input type="text" id="string-input" required>
+      <br>
+      <button type="submit">Check</button>
+    </form>
+    <p id="output"></p>
+
+    <script>
+      const form = document.querySelector("form");
+      const output = document.getElementById("output");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        // Get the string input from the form
+        const stringInput = document.getElementById("string-input").value;
+
+        // Check if the string ends with "t"
+        const endsWithT = stringInput.endsWith("t");
+
+        // Display the result
+        if (endsWithT) {
+          output.textContent = `"${stringInput}" ends with "t"!`;
+        } else {
+          output.textContent = `"${stringInput}" does not end with "t".`;
+        }
+      });
+    </script>
+  </body>
+</html>
