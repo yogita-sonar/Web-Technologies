@@ -1,0 +1,54 @@
+<!-- 1.Write a calculator program.Create two input box and five button add,substract,multiply divide, modulas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <script>
+        function add() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = Number(num1) + Number(num2);
+            document.getElementById("data").innerHTML ="Result: " +result;
+        }
+
+        function sub() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = Number(num1) - Number(num2);
+            document.getElementById("data").innerHTML ="Result: " +result;
+        }
+
+        function mul() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = Number(num1) * Number(num2);
+            document.getElementById("data").innerHTML ="Result: " +result;
+        }
+
+        function div() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = Number(num1) / Number(num2);
+            document.getElementById("data").innerHTML ="Result: " +result;
+        }
+        function mod() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = Number(num1) % Number(num2);
+            document.getElementById("data").innerHTML ="Result: " +result;
+        }
+    </script>
+</head>
+<body>
+    <h3>Enter 1st Number:</h3> <input type="text" name="" id="num1"> <br> <br>
+    <h3>Enter 2nd Number:</h3> <input type="text" name="" id="num2"> <br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mod()">Modulas</button>
+    <p id="result"></p>
+    <h3 id="data">Show Result</h3>
+    
+</body>
+</html>

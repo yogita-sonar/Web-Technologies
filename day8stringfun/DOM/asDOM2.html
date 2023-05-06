@@ -1,0 +1,39 @@
+<!-- 2.Write a code to accept name of Friends name from user and show in list using DOM -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Friend List</title>
+    <script>        
+      var fList = [];
+      
+      function add_friends_list(){
+        var friend = document.getElementById("name").value
+        var temp = {
+          name: friend,
+        };
+        fList.push(temp);
+      }
+
+    function displaylist(){
+      var htmlStr = "<ol>"
+		for(var i = 0; i < fList.length; i++){
+			htmlStr = htmlStr + "<li>"+fList[i].name+"</li>"
+		}
+		htmlStr = htmlStr + "</ol>";
+		document.getElementById("data").innerHTML= htmlStr;
+    document.getElementById("datac").innerHTML= htmlStr;
+    }
+    </script>
+  </head>
+  <body>
+    Enter Friends Name: <input type="text" name="" id="name">
+    <button onclick="add_friends_list()">Save</button>
+    <button onclick="displaylist()">Show</button>
+    <button class="btn-primary" >view</button>
+    <h3 id="data"></h3>
+</body>
+  </body>
+</html>
+
+
+

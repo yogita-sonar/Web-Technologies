@@ -1,0 +1,47 @@
+<!-- 3.Create a web page and take 3 Movies details  and show in table
+Movies property : Movie Name,Price,Seat -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Movie Detail </title>
+
+  <script>
+    var mov = [];
+    function addMov() {
+      var movName = document.getElementById("name").value
+      var ticketPrice = document.getElementById("price").value
+      var SeatNo = document.getElementById("seat").value
+
+      var temp = {
+        name: movName,
+        price: ticketPrice,
+        seat: SeatNo,
+      };
+      mov.push(temp);
+    }
+
+    function displayMov() {
+      var htmlStr = "<table border=1 cellspacing=1 ><th>Movie Name:</th><th>Ticket Price:</th><th>Seat No.:</th>"
+      for (var i = 0; i < mov.length; i++) {
+        htmlStr = htmlStr + "<tr><td>" + mov[i].name + "</td><td>" + mov[i].price + "</td><td>"
+          + mov[i].seat + "</td></tr>"
+      }
+      htmlStr = htmlStr + "</table>"
+      document.write(htmlStr)
+      document.getElementById("data").innerHTML = htmlStr
+    }
+  </script>
+</head>
+
+<body>
+  Enter Movie Name: <input type="text" name="" id="name"> <br>
+  Enter Ticket Price: <input type="text" name="" id="price"><br>
+  Enter Seat No.: <input type="text" name="" id="seat"><br>
+  <button onclick="addMov()">Save</button>
+  <button onclick="displayMov()">Show</button>
+  <div id="data"></div>
+</body>
+
+</html>

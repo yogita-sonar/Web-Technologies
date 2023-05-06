@@ -1,0 +1,24 @@
+<!-- Use function :
+7.Write a code to accept name of Friends name from user and show in list -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friends List</title>
+    <script>
+		function addFriend() {
+			
+			var friendName = prompt("Enter a friend's name:");
+
+			
+			var list = document.getElementById("friendList");
+			var item = document.createElement("li");
+			item.innerHTML = friendName;
+			list.appendChild(item);
+		}
+	</script>
+</head>
+<body>
+	
+	
+</body>
+</html>
